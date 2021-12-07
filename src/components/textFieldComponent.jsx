@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { addStyles, EditableMathField } from "react-mathquill";
 
 addStyles();
 
-const CalculationTextBox = () => {
-  const [latex, setLatex] = useState("");
+const CalculationTextBox = (props) => {
+  const { latex, setLatex, mathfield } = props;
   return (
     <React.Fragment>
       <div>
@@ -22,11 +22,11 @@ const CalculationTextBox = () => {
           config={{
             spaceBehavesLikeTab: true,
           }}
-          mathquillDidMount={(mathField) => {
-            mathField.focus();
+          mathquillDidMount={(mf) => {
+            mathfield.current = mf;
           }}
         />
-        {/* </TextField> */}
+        {/* For the personal refference */}
         <p>{latex}</p>
       </div>
     </React.Fragment>

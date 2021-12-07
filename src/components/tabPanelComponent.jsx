@@ -5,6 +5,8 @@ import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import ButtonsComponent from "./button-setOne";
+import ButtonsSetTwoComponent from "./button-setTwo";
+import ButtonsSetThreeComponent from "./button-setThree";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -41,7 +43,7 @@ function a11yProps(index) {
   };
 }
 
-export default function MathematicTypesTabs() {
+export default function MathematicTypesTabs(props) {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -62,13 +64,13 @@ export default function MathematicTypesTabs() {
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
-        Item one
+        <ButtonsComponent onClick={props.onClick} />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Item Two
+        <ButtonsSetTwoComponent onClick={props.onClick} />
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Item Three
+        <ButtonsSetThreeComponent onClick={props.onClick} />
       </TabPanel>
     </Box>
   );

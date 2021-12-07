@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Grid } from "@mui/material";
-const ButtonsComponent = (props) => {
+const ButtonsSetThreeComponent = (props) => {
   return (
     <Grid container spacing={2}>
       <Grid item xs={3}>
@@ -10,31 +10,31 @@ const ButtonsComponent = (props) => {
           onClick={() => props.onClick("\\sqrt")}
           style={{ textTransform: "lowercase" }}
         >
-          &radic;
+          &forall;
         </Button>
       </Grid>
       <Grid item xs={3}>
         <Button
           variant="contained"
           color="primary"
-          onClick={() => props.onClick("|")}
+          onClick={() => props.onClick("\\mp")}
           style={{ textTransform: "lowercase" }}
         >
-          |x|
+          &#8723;
         </Button>
       </Grid>
       <Grid item xs={3}>
         <Button
           variant="contained"
           color="primary"
-          onClick={() => props.onClick("\\nthroot")}
+          onClick={() => props.onClick("\\cup")}
           style={{ textTransform: "lowercase" }}
         >
-          n√x
+          &cup;
         </Button>
       </Grid>
     </Grid>
   );
 };
 
-export default ButtonsComponent;
+export default ButtonsSetThreeComponent;

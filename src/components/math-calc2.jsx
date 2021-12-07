@@ -60,7 +60,7 @@ const EditableMathExample = () => {
           variant="contained"
           color="primary"
           style={{ textTransform: "lowercase" }}
-          onClick={() => addText("\\frac")}
+          onClick={() => addText("\\div")}
         >
           &radic;{" "}
         </Button>

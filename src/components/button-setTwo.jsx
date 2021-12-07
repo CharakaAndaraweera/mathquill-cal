@@ -1,40 +1,40 @@
 import React from "react";
 import { Button, Grid } from "@mui/material";
-const ButtonsComponent = (props) => {
+const ButtonsSetTwoComponent = (props) => {
   return (
     <Grid container spacing={2}>
       <Grid item xs={3}>
         <Button
           variant="contained"
           color="primary"
-          onClick={() => props.onClick("\\sqrt")}
+          onClick={() => props.onClick("\\in")}
           style={{ textTransform: "lowercase" }}
         >
-          &radic;
+          &isin;
         </Button>
       </Grid>
       <Grid item xs={3}>
         <Button
           variant="contained"
           color="primary"
-          onClick={() => props.onClick("|")}
+          onClick={() => props.onClick("\\approx")}
           style={{ textTransform: "lowercase" }}
         >
-          |x|
+          &asymp;
         </Button>
       </Grid>
       <Grid item xs={3}>
         <Button
           variant="contained"
           color="primary"
-          onClick={() => props.onClick("\\nthroot")}
+          onClick={() => props.onClick("\\notin")}
           style={{ textTransform: "lowercase" }}
         >
-          n√x
+          &notin;
         </Button>
       </Grid>
     </Grid>
   );
 };
 
-export default ButtonsComponent;
+export default ButtonsSetTwoComponent;
