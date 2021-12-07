@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Grid } from "@mui/material";
-import { addStyles, StaticMathField } from "react-mathquill";
+import { addStyles } from "react-mathquill";
 
 addStyles();
 const ButtonsSetThreeComponent = (props) => {
