@@ -58,9 +58,9 @@ export default function MathematicTypesTabs(props) {
           onChange={handleChange}
           aria-label="basic tabs example"
         >
-          <Tab label="Button Set 1" {...a11yProps(0)} />
-          <Tab label="Button Set 2" {...a11yProps(1)} />
-          <Tab label="Button Set 3" {...a11yProps(2)} />
+          <Tab label="Tab 1" {...a11yProps(0)} />
+          <Tab label="Tab 2" {...a11yProps(1)} />
+          <Tab label="Tab 3" {...a11yProps(2)} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
