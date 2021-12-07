@@ -7,7 +7,7 @@ const ButtonsSetThreeComponent = (props) => {
         <Button
           variant="contained"
           color="primary"
-          onClick={() => props.onClick("\\sqrt")}
+          onClick={() => props.onClick("\\forall")}
           style={{ textTransform: "lowercase" }}
         >
           &forall;
